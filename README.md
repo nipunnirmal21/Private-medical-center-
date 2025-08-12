@@ -1,2 +1,2 @@
-# Gomez-hospital-
-Website for Gomez hospital 
+# Private-hospital-
+Website for private medical center 
