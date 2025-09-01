@@ -114,3 +114,23 @@
             line-height: 1.5;
             margin-bottom: 1rem;
         }
+        .read-more-btn {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            font-weight: 500;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            transition: background-color 0.2s ease-in-out;
+            display: inline-block;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .read-more-btn:hover {
+            background-color: var(--primary-hover-color);
+        }
+        .read-more-btn:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
