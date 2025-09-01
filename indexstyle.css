@@ -192,3 +192,13 @@
         .modal-content a:hover {
             color: var(--primary-hover-color);
         }
+        .img-placeholder {
+            min-height: 128px; /* For doctor images */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e5e7eb;
+            color: #6b7280;
+            font-size: 0.875rem;
+            text-align: center;
+        }
