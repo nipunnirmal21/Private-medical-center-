@@ -202,3 +202,27 @@
             font-size: 0.875rem;
             text-align: center;
         }
+        .doctor-carousel-container {
+            display: flex;
+            gap: 2rem;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding-bottom: 1rem; /* For scrollbar visibility on some browsers */
+            -webkit-overflow-scrolling: touch;
+        }
+        .doctor-carousel-container::-webkit-scrollbar {
+            height: 8px;
+        }
+        .doctor-carousel-container::-webkit-scrollbar-thumb {
+            background-color: #9ca3af;
+            border-radius: 9999px;
+        }
+        .doctor-carousel-container::-webkit-scrollbar-track {
+            background-color: #e5e7eb;
+            border-radius: 9999px;
+        }
+        .doctor-carousel-card {
+            flex: 0 0 100%;
+            scroll-snap-align: start;
+            width: 100%;
+        }
