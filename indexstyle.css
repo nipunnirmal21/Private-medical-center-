@@ -226,3 +226,13 @@
             scroll-snap-align: start;
             width: 100%;
         }
+        @media (min-width: 768px) {
+            .doctor-carousel-card {
+                flex: 0 0 45%;
+            }
+        }
+        @media (min-width: 1024px) {
+            .doctor-carousel-card {
+                flex: 0 0 30%;
+            }
+        }
