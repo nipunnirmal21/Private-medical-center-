@@ -25,3 +25,8 @@ const departmentsData = {
                 services: ['Routine Eye Exams', 'Cataract Surgery', 'Glaucoma Management', 'Diabetic Retinopathy Treatment', 'Optical Services']
             }
         };
+        const modal = document.getElementById('department-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDescription = document.getElementById('modal-description');
+        const modalServices = document.getElementById('modal-services');
+        const closeBtn = modal.querySelector('.close-btn');
