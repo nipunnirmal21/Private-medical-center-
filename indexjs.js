@@ -30,3 +30,23 @@ const departmentsData = {
         const modalDescription = document.getElementById('modal-description');
         const modalServices = document.getElementById('modal-services');
         const closeBtn = modal.querySelector('.close-btn');
+
+        function openModal(departmentId) {
+            const data = departmentsData[departmentId];
+            if (!data) return;
+
+            modalTitle.textContent = data.title;
+            modalDescription.textContent = data.description;
+
+            modalServices.innerHTML = '';
+            data.services.forEach(service => {
+                const li = document.createElement('li');
+                li.textContent = service;
+                modalServices.appendChild(li);
+            });
+
+            modal.classList.add('is-visible');
+            modal.setAttribute('aria-hidden', 'false');
+            // Give focus to the modal to trap it for accessibility
+            modal.focus();
+        }
