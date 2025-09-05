@@ -102,6 +102,8 @@ const departmentsData = {
             errorElement.classList.add('hidden');
         }
         };
+        form.addEventListener('submit', function(event) {
+        event.preventDefault();
 
 
 
