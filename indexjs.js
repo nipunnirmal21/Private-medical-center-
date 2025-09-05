@@ -96,6 +96,13 @@ const departmentsData = {
             errorElement.classList.remove('hidden');
         }
         };
+        const hideError = (id) => {
+        const errorElement = document.getElementById(id);
+        if (errorElement) {
+            errorElement.classList.add('hidden');
+        }
+        };
+
 
 
         
