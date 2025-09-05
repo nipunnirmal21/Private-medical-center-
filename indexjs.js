@@ -70,3 +70,9 @@ const departmentsData = {
                 }
             });
         });
+         closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
