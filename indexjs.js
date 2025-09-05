@@ -89,6 +89,14 @@ const departmentsData = {
         const form = document.getElementById('appointmentForm');
         const appointmentBtn = document.getElementById('appointmentBtn');
 
+        const showError = (id, message) => {
+        const errorElement = document.getElementById(id);
+        if (errorElement) {
+            errorElement.textContent = message;
+            errorElement.classList.remove('hidden');
+        }
+        };
+
 
         
     
