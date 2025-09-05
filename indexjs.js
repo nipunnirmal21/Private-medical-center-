@@ -54,3 +54,11 @@ const departmentsData = {
             modal.classList.remove('is-visible');
             modal.setAttribute('aria-hidden', 'true');
         }
+        document.querySelectorAll('.department-card').forEach(card => {
+            card.addEventListener('click', (event) => {
+                const target = event.target.closest('.department-card');
+                if (target) {
+                    const departmentId = target.dataset.department;
+                    openModal(departmentId);
+                }
+            });
