@@ -76,3 +76,8 @@ const departmentsData = {
                 closeModal();
             }
         });
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && modal.classList.contains('is-visible')) {
+                closeModal();
+            }
+        });
