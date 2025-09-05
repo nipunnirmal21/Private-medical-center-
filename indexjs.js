@@ -50,3 +50,7 @@ const departmentsData = {
             // Give focus to the modal to trap it for accessibility
             modal.focus();
         }
+        function closeModal() {
+            modal.classList.remove('is-visible');
+            modal.setAttribute('aria-hidden', 'true');
+        }
