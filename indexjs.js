@@ -81,3 +81,11 @@ const departmentsData = {
                 closeModal();
             }
         });
+
+        const YOUR_EMAILJS_SERVICE_ID = 'service_6g1xedk';
+        const YOUR_EMAILJS_TEMPLATE_ID = 'template_kdaiw1h';
+        const YOUR_EMAILJS_PUBLIC_KEY = 'vbpKFUzbOiYqfAzdY';
+
+        
+    
+        
