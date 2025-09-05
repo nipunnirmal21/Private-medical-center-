@@ -105,6 +105,14 @@ const departmentsData = {
         form.addEventListener('submit', function(event) {
         event.preventDefault();
 
+        // Validate form fields
+        const name = document.getElementById('name').value;
+        const phone = document.getElementById('phone').value;
+        const specialist = document.getElementById('specialist').value;
+        const doctor = document.getElementById('doctor').value;
+        const date = document.getElementById('date').value;
+        const time = document.getElementById('time').value;
+
 
 
         
