@@ -86,6 +86,10 @@ const departmentsData = {
         const YOUR_EMAILJS_TEMPLATE_ID = 'template_kdaiw1h';
         const YOUR_EMAILJS_PUBLIC_KEY = 'vbpKFUzbOiYqfAzdY';
 
+        const form = document.getElementById('appointmentForm');
+        const appointmentBtn = document.getElementById('appointmentBtn');
+
+
         
     
         
