@@ -113,6 +113,14 @@ const departmentsData = {
         const date = document.getElementById('date').value;
         const time = document.getElementById('time').value;
 
+         let isValid = true;
+        hideError('name-error');
+        hideError('phone-error');
+        hideError('specialist-error');
+        hideError('doctor-error');
+        hideError('date-error');
+        hideError('time-error');
+
 
 
         
