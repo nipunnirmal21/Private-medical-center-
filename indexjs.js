@@ -121,6 +121,35 @@ const departmentsData = {
         hideError('date-error');
         hideError('time-error');
 
+        if (name.trim() === '') {
+            showError('name-error', 'Please enter your name.');
+            isValid = false;
+        }
+        if (phone.trim() === '' || !/^\d{10,}$/.test(phone)) {
+            showError('phone-error', 'Please enter a valid phone number (at least 10 digits).');
+            isValid = false;
+        }
+        if (specialist.trim() === '') {
+            showError('specialist-error', 'Please select a specialist.');
+            isValid = false;
+        }
+        if (doctor.trim() === '') {
+            showError('doctor-error', 'Please select a doctor.');
+            isValid = false;
+        }
+        if (date.trim() === '') {
+            showError('date-error', 'Please select a date.');
+            isValid = false;
+        }
+        if (time.trim() === '') {
+            showError('time-error', 'Please select a time.');
+            isValid = false;
+        }
+
+        if (!isValid) {
+            return;
+        }
+
 
 
         
