@@ -149,6 +149,20 @@ const departmentsData = {
         if (!isValid) {
             return;
         }
+        appointmentBtn.disabled = true;
+        appointmentBtn.textContent = 'Sending...';
+
+        const templateParams = {
+            name: name,
+            phone: phone,
+            specialist: specialist,
+            doctor: doctor,
+            date: date,
+            time: time,
+            // Recipient emails for the template
+            to_email_1: 'nipunnirmalsamarathunga11@gmail.com',
+            to_email_2: 'aimagica968@gmail.com'
+        };
 
 
 
