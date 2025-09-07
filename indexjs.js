@@ -183,7 +183,14 @@ const departmentsData = {
                 appointmentBtn.textContent = 'Book Appointment';
             });
     });
+            const allDoctors = [
+        "Alistair Finch", "Evelyn Reed", "Marcus Thorne", "Julianna Gray", "Liam Carter",
+        "Sophia Chen", "Benjamin Hayes", "Isabella Rossi", "Owen Miller", "Amelia Foster"
+    ];
 
+    const searchInput = document.getElementById('doctor-search');
+    const autocompleteList = document.getElementById('autocomplete-list');
+    const doctorCards = document.querySelectorAll('.doctor-carousel-card');
 
 
         
