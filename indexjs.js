@@ -192,6 +192,17 @@ const departmentsData = {
     const autocompleteList = document.getElementById('autocomplete-list');
     const doctorCards = document.querySelectorAll('.doctor-carousel-card');
 
+    searchInput.addEventListener('keyup', function(e) {
+        const searchText = e.target.value.toLowerCase();
+        
+        // Clear previous list
+        autocompleteList.innerHTML = '';
+        if (searchText.length === 0) {
+            autocompleteList.classList.add('hidden');
+            doctorCards.forEach(card => card.style.display = '');
+            return;
+        }
+
 
         
     
