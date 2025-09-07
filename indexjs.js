@@ -225,6 +225,24 @@ const departmentsData = {
 
         filterDoctors(searchText);
     });
+     function filterDoctors(query) {
+        const filteredQuery = query.toLowerCase();
+        doctorCards.forEach(card => {
+            const doctorName = card.dataset.doctorName.toLowerCase();
+            if (doctorName.includes(filteredQuery)) {
+                card.style.display = '';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    searchInput.addEventListener('focusout', () => {
+        // Hide autocomplete list after a small delay to allow for clicks
+        setTimeout(() => {
+            autocompleteList.classList.add('hidden');
+        }, 200);
+    });
 
 
 
