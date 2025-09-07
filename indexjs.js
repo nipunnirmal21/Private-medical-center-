@@ -163,6 +163,26 @@ const departmentsData = {
             to_email_1: 'nipunnirmalsamarathunga11@gmail.com',
             to_email_2: 'aimagica968@gmail.com'
         };
+        emailjs.send(YOUR_EMAILJS_SERVICE_ID, YOUR_EMAILJS_TEMPLATE_ID, templateParams)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                // Show success message
+                const messagesContainer = document.getElementById('form-messages');
+                messagesContainer.innerHTML = '<p class="text-green-600 font-semibold">Appointment booked successfully!</p>';
+                // Optionally clear the form
+                form.reset();
+            }, function(error) {
+                console.log('FAILED...', error);
+                // Show error message
+                const messagesContainer = document.getElementById('form-messages');
+                messagesContainer.innerHTML = '<p class="text-red-600 font-semibold">Failed to book appointment. Please try again.</p>';
+            })
+            .finally(() => {
+                // Re-enable the button after the attempt
+                appointmentBtn.disabled = false;
+                appointmentBtn.textContent = 'Book Appointment';
+            });
+    });
 
 
 
