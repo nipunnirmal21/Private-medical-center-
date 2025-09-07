@@ -203,6 +203,30 @@ const departmentsData = {
             return;
         }
 
+        const matches = allDoctors.filter(doctor => doctor.toLowerCase().includes(searchText));
+
+        if (matches.length > 0) {
+            matches.forEach(match => {
+                const item = document.createElement('div');
+                item.classList.add('autocomplete-item');
+                item.textContent = match;
+                item.addEventListener('click', () => {
+                    searchInput.value = match;
+                    autocompleteList.classList.add('hidden');
+                    filterDoctors(match);
+                });
+                autocompleteList.appendChild(item);
+            });
+            autocompleteList.classList.remove('hidden');
+        } else {
+            autocompleteList.classList.add('hidden');
+            doctorCards.forEach(card => card.style.display = '');
+        }
+
+        filterDoctors(searchText);
+    });
+
+
 
         
     
