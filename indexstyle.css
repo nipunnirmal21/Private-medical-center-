@@ -310,3 +310,8 @@
 .package-content {
     padding: 1.5rem;
 }
+.package-details p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #4b5563;
+}
