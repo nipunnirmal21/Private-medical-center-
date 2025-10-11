@@ -371,3 +371,15 @@
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     cursor: pointer;
 }
+.photo-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.landscape-photo {
+    width: 400px;
+    height: 250px;
+}
+.portrait-photo {
+    width: 250px;
+    height: 400px;
+}
