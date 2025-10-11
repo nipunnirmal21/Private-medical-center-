@@ -315,3 +315,18 @@
     margin-bottom: 1.5rem;
     color: #4b5563;
 }
+.test-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 1rem;
+}
+
+.test-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed #e5e7eb;
+}
