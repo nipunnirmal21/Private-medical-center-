@@ -330,3 +330,16 @@
     padding: 0.5rem 0;
     border-bottom: 1px dashed #e5e7eb;
 }
+.test-item:last-child {
+    border-bottom: none;
+}
+
+.test-item .english {
+    font-weight: 500;
+    color: #1f2937;
+}
+
+.test-item .sinhala {
+    font-weight: 400;
+    color: #6b7280;
+}
