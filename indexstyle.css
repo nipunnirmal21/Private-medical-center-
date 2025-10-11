@@ -295,3 +295,8 @@
     top: 1rem;
     left: 1rem;
 }
+.package-placeholder-text {
+    font-style: italic;
+    color: #6b7280;
+    padding-top: 2rem;
+}
