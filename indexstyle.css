@@ -264,3 +264,13 @@
     overflow: hidden;
     border: 1px solid #e5e7eb;
 }
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+@media (min-width: 768px) {
+    .package-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
