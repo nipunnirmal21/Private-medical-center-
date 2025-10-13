@@ -449,3 +449,43 @@ body {
     max-height: 90vh;
     overflow-y: auto;
 }
+.text-navy-blue {
+    color: #000080;
+}
+#appointment h1 {
+    color: #000080;
+}
+#doctors h1 {
+    color: #000080;
+}
+#branches h3 {
+    color: #000080;
+}
+/* Change 'About Us' heading color to Navy Blue */
+#about h1 {
+    color: #000080;
+}
+#contact h1 {
+    color: #000080;
+}
+header:has(+ #services-grid) h1 {
+    color: #000080;
+}
+/* Change the header's 'Appointment' button to Navy Blue */
+header a.bg-blue-600 {
+    background-color: #000080;
+}
+
+/* Also update its hover color to a darker navy */
+header a.bg-blue-600:hover {
+    background-color: #00006b;
+}
+/* Change Home tab button colors to Navy Blue */
+#hero a.bg-blue-600 {
+    background-color: #000080;
+}
+
+/* Also update their hover color to a darker navy */
+#hero a.bg-blue-600:hover {
+    background-color: #00006b;
+}
