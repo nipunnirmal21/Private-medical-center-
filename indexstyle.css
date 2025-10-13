@@ -489,3 +489,40 @@ header a.bg-blue-600:hover {
 #hero a.bg-blue-600:hover {
     background-color: #00006b;
 }
+/* Change the 'Book Appointment' form button to Navy Blue */
+#appointmentBtn {
+    background-color: #000080;
+}
+
+/* Also update its hover color to a darker navy */
+#appointmentBtn:hover {
+    background-color: #00006b;
+}
+#about .text-blue-600 {
+    color: #000080;
+}
+/* --- Contact Page Icon Color Changes --- */
+
+/* This changes the Location, Call Us, and Email Us icons to navy blue. */
+#contact .text-blue-600 {
+    color: #000080;
+}
+
+/* This changes the background of the social media icons to navy blue. */
+#contact a.bg-blue-600 {
+    background-color: #000080;
+}
+
+/* This also updates the social icon hover color to a darker navy. */
+#contact a.bg-blue-600:hover {
+    background-color: #00006b;
+}
+/* Change 'Send Message' button color to Navy Blue */
+#contactForm button {
+    background-color: #000080;
+}
+
+/* Also update its hover color to a darker navy */
+#contactForm button:hover {
+    background-color: #00006b;
+    }
