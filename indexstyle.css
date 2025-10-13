@@ -445,3 +445,7 @@
 body {
     font-family: 'Inter', sans-serif;
 }
+.modal-content {
+    max-height: 90vh;
+    overflow-y: auto;
+}
