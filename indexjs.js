@@ -6,6 +6,14 @@ const services = [
                     keyServices: ['Private & Semi-Private Rooms', '24/7 Nursing Care', 'In-room Meal Service', 'Visitor Accommodations', 'Specialized Care Units'],
                     contactInfo: 'Please contact our admissions desk for information on room availability and amenities.'
                 },
+                {
+                    title: 'Operation Theatre',
+                    image: 'theatre-nurse-uk.png',
+                    description: 'We are equipped with a modern, sterile operation theatre designed to support a wide range of surgical procedures with advanced technology.',
+                    keyServices: ['General Surgery', 'Laparoscopic Surgery', 'Orthopedic Surgery', 'Cardiac Surgery', 'Post-Anesthesia Care Unit'],
+                    contactInfo: 'Surgical procedures are scheduled through consultant recommendation. For inquiries, contact the surgical department.'
+                },
+                ];
 
 const departmentsData = {
             cardiology: {
