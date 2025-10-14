@@ -13,6 +13,13 @@ const services = [
                     keyServices: ['General Surgery', 'Laparoscopic Surgery', 'Orthopedic Surgery', 'Cardiac Surgery', 'Post-Anesthesia Care Unit'],
                     contactInfo: 'Surgical procedures are scheduled through consultant recommendation. For inquiries, contact the surgical department.'
                 },
+                {
+                    title: '24/7 OPD',
+                    image: 'OPD-Wellness.jpg',
+                    description: 'Our Outpatient Department operates 24/7, providing continuous medical consultation and care without the need for prior appointments.',
+                    keyServices: ['Emergency Consultations', 'Minor Injury Treatment', 'General Health Checkups', 'Follow-up Visits', 'No Appointment Needed'],
+                    contactInfo: 'For immediate medical attention, please visit our Outpatient Department at any time.'
+                },
                 ];
 
 const departmentsData = {
