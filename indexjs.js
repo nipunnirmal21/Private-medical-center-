@@ -20,6 +20,13 @@ const services = [
                     keyServices: ['Emergency Consultations', 'Minor Injury Treatment', 'General Health Checkups', 'Follow-up Visits', 'No Appointment Needed'],
                     contactInfo: 'For immediate medical attention, please visit our Outpatient Department at any time.'
                 },
+                {
+                    title: 'Pharmacy Service',
+                    image: 'pharmacy.jpg',
+                    description: 'A fully stocked in-house pharmacy is available for quick and convenient access to prescribed medications.',
+                    keyServices: ['Prescription Fulfillment', 'Over-the-Counter Medicine', 'Medication Counseling', 'Medical Supplies', 'Home Delivery Options'],
+                    contactInfo: 'Our pharmacy is located on the ground floor and is open 24 hours a day.'
+                },
                 ];
 
 const departmentsData = {
