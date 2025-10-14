@@ -1,3 +1,12 @@
+const services = [
+                {
+                    title: 'Inpatient Wards',
+                    image: 'ward.jpg',
+                    description: 'Comfortable and clean inpatient wards are available for patients requiring overnight or extended care, managed by our dedicated nursing staff.',
+                    keyServices: ['Private & Semi-Private Rooms', '24/7 Nursing Care', 'In-room Meal Service', 'Visitor Accommodations', 'Specialized Care Units'],
+                    contactInfo: 'Please contact our admissions desk for information on room availability and amenities.'
+                },
+
 const departmentsData = {
             cardiology: {
                 title: 'Cardiology',
