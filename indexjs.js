@@ -27,6 +27,13 @@ const services = [
                     keyServices: ['Prescription Fulfillment', 'Over-the-Counter Medicine', 'Medication Counseling', 'Medical Supplies', 'Home Delivery Options'],
                     contactInfo: 'Our pharmacy is located on the ground floor and is open 24 hours a day.'
                 },
+                {
+                    title: 'Diagnostic Services',
+                    image: 'Diagnostic-Services.jpg',
+                    description: 'We offer a wide range of diagnostic services including x-rays, ECG, ultrasound, and laboratory blood tests to support accurate medical evaluations.',
+                    keyServices: ['X-Ray Imaging', 'Electrocardiogram (ECG)', 'Ultrasound Scans', 'Laboratory Blood Tests', 'CT & MRI Scans'],
+                    contactInfo: 'Our diagnostic wing operates 24/7. Appointments can be booked for specialized tests.'
+                },
                 ];
 
 const departmentsData = {
