@@ -34,6 +34,13 @@ const services = [
                     keyServices: ['X-Ray Imaging', 'Electrocardiogram (ECG)', 'Ultrasound Scans', 'Laboratory Blood Tests', 'CT & MRI Scans'],
                     contactInfo: 'Our diagnostic wing operates 24/7. Appointments can be booked for specialized tests.'
                 },
+                {
+                    title: 'Wheelchair Accessible',
+                    image: 'wheelchair.jpg',
+                    description: 'Our facility is fully wheelchair accessible, ensuring safe and convenient entry for all patients with mobility needs.',
+                    keyServices: ['Ramp Access', 'Automatic Doors', 'Accessible Restrooms', 'Designated Parking', 'Elevator Access'],
+                    contactInfo: 'For specific accessibility questions or assistance upon arrival, please contact our front desk.'
+                }
                 ];
 
 const departmentsData = {
