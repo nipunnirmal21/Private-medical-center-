@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function () {
 const services = [
                 {
                     title: 'Inpatient Wards',
