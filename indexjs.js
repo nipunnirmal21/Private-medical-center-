@@ -42,6 +42,10 @@ const services = [
                     contactInfo: 'For specific accessibility questions or assistance upon arrival, please contact our front desk.'
                 }
                 ];
+                const servicesGrid = document.getElementById('services-grid');
+                const modal = document.getElementById('details-modal');
+                const modalContentArea = document.getElementById('modal-content-area');
+
 
 const departmentsData = {
             cardiology: {
