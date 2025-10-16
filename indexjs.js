@@ -136,6 +136,16 @@ const departmentsData = {
                     modalContentArea.classList.remove('opacity-0', 'scale-95');
                 });
             }
+            // --- FUNCTION TO HIDE THE MODAL ---
+            function hideModal() {
+                modal.classList.add('opacity-0');
+                modalContentArea.classList.add('opacity-0', 'scale-95');
+
+                setTimeout(() => {
+                    modal.classList.add('pointer-events-none');
+                    document.body.style.overflow = ''; // Restore background scrolling
+                }, 300); // Duration should match the transition
+            }
 
 
 
