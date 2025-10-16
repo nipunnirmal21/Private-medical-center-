@@ -126,6 +126,16 @@ const departmentsData = {
                         </div>
                     </div>
                 `;
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                modal.classList.remove('pointer-events-none');
+                
+                // We use a short timeout to allow the browser to apply the above style changes
+                // before we trigger the animation, ensuring a smooth transition.
+                requestAnimationFrame(() => {
+                    modal.classList.remove('opacity-0');
+                    modalContentArea.classList.remove('opacity-0', 'scale-95');
+                });
+            }
 
 
 
