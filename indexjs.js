@@ -110,6 +110,22 @@ const departmentsData = {
                         <button id="close-modal-btn" class="absolute top-6 right-6 text-gray-400 hover:text-gray-600 transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                         </button>
+                        <h2 class="text-3xl font-bold text-blue-600 mb-4">${service.title}</h2>
+                        <p class="text-gray-700 mb-6 leading-relaxed">${service.description}</p>
+                        
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Key Services</h3>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                                ${service.keyServices.map(item => `<li>${item}</li>`).join('')}
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Contact & Doctors</h3>
+                            <p class="text-gray-700">${service.contactInfo}</p>
+                        </div>
+                    </div>
+                `;
 
 
 
