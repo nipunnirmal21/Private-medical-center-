@@ -81,218 +81,28 @@ const departmentsData = {
         const modalServices = document.getElementById('modal-services');
         const closeBtn = modal.querySelector('.close-btn');
 
-        function openModal(departmentId) {
-            const data = departmentsData[departmentId];
-            if (!data) return;
-
-            modalTitle.textContent = data.title;
-            modalDescription.textContent = data.description;
-
-            modalServices.innerHTML = '';
-            data.services.forEach(service => {
-                const li = document.createElement('li');
-                li.textContent = service;
-                modalServices.appendChild(li);
-            });
-
-            modal.classList.add('is-visible');
-            modal.setAttribute('aria-hidden', 'false');
-            // Give focus to the modal to trap it for accessibility
-            modal.focus();
-        }
-        function closeModal() {
-            modal.classList.remove('is-visible');
-            modal.setAttribute('aria-hidden', 'true');
-        }
-        document.querySelectorAll('.department-card').forEach(card => {
-            card.addEventListener('click', (event) => {
-                const target = event.target.closest('.department-card');
-                if (target) {
-                    const departmentId = target.dataset.department;
-                    openModal(departmentId);
-                }
-            });
-            card.addEventListener('keydown', (event) => {
-                if (event.key === 'Enter' || event.key === ' ') {
-                    event.preventDefault();
-                    const departmentId = card.dataset.department;
-                    openModal(departmentId);
-                }
-            });
-        });
-         closeBtn.addEventListener('click', closeModal);
-        modal.addEventListener('click', (event) => {
-            if (event.target === modal) {
-                closeModal();
-            }
-        });
-        document.addEventListener('keydown', (event) => {
-            if (event.key === 'Escape' && modal.classList.contains('is-visible')) {
-                closeModal();
-            }
-        });
-
-        const YOUR_EMAILJS_SERVICE_ID = 'service_6g1xedk';
-        const YOUR_EMAILJS_TEMPLATE_ID = 'template_kdaiw1h';
-        const YOUR_EMAILJS_PUBLIC_KEY = 'vbpKFUzbOiYqfAzdY';
-
-        const form = document.getElementById('appointmentForm');
-        const appointmentBtn = document.getElementById('appointmentBtn');
-
-        const showError = (id, message) => {
-        const errorElement = document.getElementById(id);
-        if (errorElement) {
-            errorElement.textContent = message;
-            errorElement.classList.remove('hidden');
-        }
-        };
-        const hideError = (id) => {
-        const errorElement = document.getElementById(id);
-        if (errorElement) {
-            errorElement.classList.add('hidden');
-        }
-        };
-        form.addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        // Validate form fields
-        const name = document.getElementById('name').value;
-        const phone = document.getElementById('phone').value;
-        const specialist = document.getElementById('specialist').value;
-        const doctor = document.getElementById('doctor').value;
-        const date = document.getElementById('date').value;
-        const time = document.getElementById('time').value;
-
-         let isValid = true;
-        hideError('name-error');
-        hideError('phone-error');
-        hideError('specialist-error');
-        hideError('doctor-error');
-        hideError('date-error');
-        hideError('time-error');
-
-        if (name.trim() === '') {
-            showError('name-error', 'Please enter your name.');
-            isValid = false;
-        }
-        if (phone.trim() === '' || !/^\d{10,}$/.test(phone)) {
-            showError('phone-error', 'Please enter a valid phone number (at least 10 digits).');
-            isValid = false;
-        }
-        if (specialist.trim() === '') {
-            showError('specialist-error', 'Please select a specialist.');
-            isValid = false;
-        }
-        if (doctor.trim() === '') {
-            showError('doctor-error', 'Please select a doctor.');
-            isValid = false;
-        }
-        if (date.trim() === '') {
-            showError('date-error', 'Please select a date.');
-            isValid = false;
-        }
-        if (time.trim() === '') {
-            showError('time-error', 'Please select a time.');
-            isValid = false;
-        }
-
-        if (!isValid) {
-            return;
-        }
-        appointmentBtn.disabled = true;
-        appointmentBtn.textContent = 'Sending...';
-
-        const templateParams = {
-            name: name,
-            phone: phone,
-            specialist: specialist,
-            doctor: doctor,
-            date: date,
-            time: time,
-            // Recipient emails for the template
-            to_email_1: 'nipunnirmalsamarathunga11@gmail.com',
-            to_email_2: 'aimagica968@gmail.com'
-        };
-        emailjs.send(YOUR_EMAILJS_SERVICE_ID, YOUR_EMAILJS_TEMPLATE_ID, templateParams)
-            .then(function(response) {
-                console.log('SUCCESS!', response.status, response.text);
-                // Show success message
-                const messagesContainer = document.getElementById('form-messages');
-                messagesContainer.innerHTML = '<p class="text-green-600 font-semibold">Appointment booked successfully!</p>';
-                // Optionally clear the form
-                form.reset();
-            }, function(error) {
-                console.log('FAILED...', error);
-                // Show error message
-                const messagesContainer = document.getElementById('form-messages');
-                messagesContainer.innerHTML = '<p class="text-red-600 font-semibold">Failed to book appointment. Please try again.</p>';
-            })
-            .finally(() => {
-                // Re-enable the button after the attempt
-                appointmentBtn.disabled = false;
-                appointmentBtn.textContent = 'Book Appointment';
-            });
-    });
-            const allDoctors = [
-        "Alistair Finch", "Evelyn Reed", "Marcus Thorne", "Julianna Gray", "Liam Carter",
-        "Sophia Chen", "Benjamin Hayes", "Isabella Rossi", "Owen Miller", "Amelia Foster"
-    ];
-
-    const searchInput = document.getElementById('doctor-search');
-    const autocompleteList = document.getElementById('autocomplete-list');
-    const doctorCards = document.querySelectorAll('.doctor-carousel-card');
-
-    searchInput.addEventListener('keyup', function(e) {
-        const searchText = e.target.value.toLowerCase();
-        
-        // Clear previous list
-        autocompleteList.innerHTML = '';
-        if (searchText.length === 0) {
-            autocompleteList.classList.add('hidden');
-            doctorCards.forEach(card => card.style.display = '');
-            return;
-        }
-
-        const matches = allDoctors.filter(doctor => doctor.toLowerCase().includes(searchText));
-
-        if (matches.length > 0) {
-            matches.forEach(match => {
-                const item = document.createElement('div');
-                item.classList.add('autocomplete-item');
-                item.textContent = match;
-                item.addEventListener('click', () => {
-                    searchInput.value = match;
-                    autocompleteList.classList.add('hidden');
-                    filterDoctors(match);
+        // --- FUNCTION TO POPULATE SERVICE CARDS ---
+            function renderServiceCards() {
+                services.forEach((service, index) => {
+                    const card = document.createElement('div');
+                    // Added h-[450px] to make the cards taller for the background images.
+                    card.className = 'group relative h-[450px] rounded-2xl overflow-hidden shadow-lg cursor-pointer transform hover:-translate-y-2 transition-transform duration-300';
+                    card.innerHTML = `
+                        <img src="${service.image}" alt="${service.title}" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                        <div class="relative h-full flex flex-col justify-end p-8 text-white">
+                            <div class="mt-auto">
+                                <h3 class="text-3xl font-bold leading-tight">${service.title}</h3>
+                                <button data-index="${index}" class="explore-btn mt-4 inline-flex items-center bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white font-semibold py-2 px-6 rounded-full transition-colors duration-300">
+                                    Explore More
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 w-5 h-5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                    servicesGrid.appendChild(card);
                 });
-                autocompleteList.appendChild(item);
-            });
-            autocompleteList.classList.remove('hidden');
-        } else {
-            autocompleteList.classList.add('hidden');
-            doctorCards.forEach(card => card.style.display = '');
-        }
-
-        filterDoctors(searchText);
-    });
-     function filterDoctors(query) {
-        const filteredQuery = query.toLowerCase();
-        doctorCards.forEach(card => {
-            const doctorName = card.dataset.doctorName.toLowerCase();
-            if (doctorName.includes(filteredQuery)) {
-                card.style.display = '';
-            } else {
-                card.style.display = 'none';
             }
-        });
-    }
-
-    searchInput.addEventListener('focusout', () => {
-        // Hide autocomplete list after a small delay to allow for clicks
-        setTimeout(() => {
-            autocompleteList.classList.add('hidden');
-        }, 200);
-    });
 
 
 
