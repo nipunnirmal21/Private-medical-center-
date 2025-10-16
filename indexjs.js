@@ -154,6 +154,13 @@ const departmentsData = {
                     showModal(services[serviceIndex]);
                 }
             });
+             // Event listener for closing the modal
+            modal.addEventListener('click', function(e) {
+                // Close if clicking the background, the close button, or an SVG inside the button
+                if (e.target.id === 'details-modal' || e.target.closest('#close-modal-btn')) {
+                    hideModal();
+                }
+            });
 
 
 
