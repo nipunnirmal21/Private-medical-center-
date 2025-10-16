@@ -103,6 +103,13 @@ const departmentsData = {
                     servicesGrid.appendChild(card);
                 });
             }
+            // --- FUNCTION TO SHOW THE MODAL ---
+            function showModal(service) {
+                modalContentArea.innerHTML = `
+                    <div class="p-8 relative">
+                        <button id="close-modal-btn" class="absolute top-6 right-6 text-gray-400 hover:text-gray-600 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                        </button>
 
 
 
