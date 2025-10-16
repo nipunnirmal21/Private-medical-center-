@@ -146,6 +146,14 @@ const departmentsData = {
                     document.body.style.overflow = ''; // Restore background scrolling
                 }, 300); // Duration should match the transition
             }
+            // Event listener for Explore More buttons (using event delegation)
+            servicesGrid.addEventListener('click', function(e) {
+                const button = e.target.closest('.explore-btn');
+                if (button) {
+                    const serviceIndex = button.dataset.index;
+                    showModal(services[serviceIndex]);
+                }
+            });
 
 
 
