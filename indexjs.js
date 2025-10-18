@@ -169,6 +169,9 @@ const departmentsData = {
             });
             renderServiceCards();
         });
+        // Data for doctors by specialty
+const doctorSpecialtyData = {
+        
 
 
 
