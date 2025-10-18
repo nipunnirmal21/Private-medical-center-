@@ -167,6 +167,8 @@ const departmentsData = {
                     hideModal();
                 }
             });
+            renderServiceCards();
+        });
 
 
 
