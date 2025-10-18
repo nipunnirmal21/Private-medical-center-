@@ -171,7 +171,17 @@ const departmentsData = {
         });
         // Data for doctors by specialty
 const doctorSpecialtyData = {
-        
+        "VOG": [{
+        "Doctor": "Buddhinatha kodithuwakku",
+        "Hospital": "Avissawella Base Hospital",
+        "Gender": "Male",
+        "Clinic Day": "sun, mon, tue, wed, thu, fri, sat"
+    }, {
+        "Doctor": "Susantha Amarasinghe",
+        "Hospital": "Avissawella Base Hospital",
+        "Gender": "Male",
+        "Clinic Day": "sun, mon, tue, wed, thu, fri, sat"
+    }],
 
 
 
