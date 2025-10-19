@@ -182,6 +182,17 @@ const doctorSpecialtyData = {
         "Gender": "Male",
         "Clinic Day": "sun, mon, tue, wed, thu, fri, sat"
     }],
+    "VPP": [{
+        "Doctor": "prasanna liyanage",
+        "Hospital": "Avissawella Base Hospital",
+        "Gender": "Male",
+        "Clinic Day": "mon, wed, fri, sat"
+    }, {
+        "Doctor": "kumudini cooray",
+        "Hospital": "Avissawella Base Hospital",
+        "Gender": "Female",
+        "Clinic Day": "sun, mon, tue, wed, thu, fri, sat"
+    }],
 
 
 
