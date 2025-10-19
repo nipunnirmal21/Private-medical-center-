@@ -215,6 +215,27 @@ const doctorSpecialtyData = {
         "Gender": "Female",
         "Clinic Day": "mon, wed, fri"
     }],
+    "CCRD": [{
+        "Doctor": "Ajith Dissanayake",
+        "Hospital": "Avissawella Base Hospital",
+        "Gender": "Male",
+        "Clinic Day": "sun, mon, tue, wed, thu, fri, sat"
+    }, {
+        "Doctor": "sampath withanawasam",
+        "Hospital": "National Hospital - Colombo",
+        "Gender": "Male",
+        "Clinic Day": "wed, sat"
+    }, {
+        "Doctor": "srilal liyanarachchi",
+        "Hospital": "National Hospital - Ratnapura",
+        "Gender": "Male",
+        "Clinic Day": "sun"
+    }, {
+        "Doctor": "z jamaldeen",
+        "Hospital": "National Hospital - Knady",
+        "Gender": "Male",
+        "Clinic Day": "First Sunday of every month"
+    }],
 
 
 
