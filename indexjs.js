@@ -209,6 +209,12 @@ const doctorSpecialtyData = {
         "Gender": "Male",
         "Clinic Day": "mon, tue, wed, thu, fri, sat"
     }],
+    "VEN": [{
+        "Doctor": "Gayani Nanayakkara",
+        "Hospital": "Avissawella Base Hospital",
+        "Gender": "Female",
+        "Clinic Day": "mon, wed, fri"
+    }],
 
 
 
