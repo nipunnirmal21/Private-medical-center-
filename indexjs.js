@@ -193,6 +193,22 @@ const doctorSpecialtyData = {
         "Gender": "Female",
         "Clinic Day": "sun, mon, tue, wed, thu, fri, sat"
     }],
+    "VP": [{
+        "Doctor": "p manivannan",
+        "Hospital": "Avissawella Base Hospital",
+        "Gender": "Male",
+        "Clinic Day": "sun, mon, tue, wed, thu, fri, sat"
+    }, {
+        "Doctor": "Pradeep Gunasekara",
+        "Hospital": "Avissawella Base Hospital",
+        "Gender": "Male",
+        "Clinic Day": "mon, tue, wed, thu, fri, sat"
+    }, {
+        "Doctor": "Randeel Wellaketiya",
+        "Hospital": "Avissawella Base Hospital",
+        "Gender": "Male",
+        "Clinic Day": "mon, tue, wed, thu, fri, sat"
+    }],
 
 
 
