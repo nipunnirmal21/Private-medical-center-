@@ -259,6 +259,17 @@ const doctorSpecialtyData = {
         "Gender": "Male",
         "Clinic Day": "mon, tue, wed, thu, fri"
     }],
+    "USS": [{
+        "Doctor": "s n charavanapavan",
+        "Hospital": "Avissawella Base Hospital",
+        "Gender": "Male",
+        "Clinic Day": "mon, tue, wed, thu, fri"
+    }, {
+        "Doctor": "jagath kosgahakumbura",
+        "Hospital": "Avissawella Base Hospital",
+        "Gender": "Male",
+        "Clinic Day": "mon, tue, wed, thu, fri"
+    }],
 
 
 
