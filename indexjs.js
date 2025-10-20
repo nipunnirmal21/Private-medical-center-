@@ -253,6 +253,12 @@ const doctorSpecialtyData = {
         "Gender": "Male",
         "Clinic Day": "mon, wed, fri"
     }],
+    "ENT": [{
+        "Doctor": "Visira Weerasekara",
+        "Hospital": "Avissawella Base Hospital",
+        "Gender": "Male",
+        "Clinic Day": "mon, tue, wed, thu, fri"
+    }],
 
 
 
