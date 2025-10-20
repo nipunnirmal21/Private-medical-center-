@@ -236,6 +236,17 @@ const doctorSpecialtyData = {
         "Gender": "Male",
         "Clinic Day": "First Sunday of every month"
     }],
+    "VS": [{
+        "Doctor": "Rohan Gunaratna",
+        "Hospital": "Avissawella Base Hospital",
+        "Gender": "Male",
+        "Clinic Day": "sun, mon, tue, wed, thu, fri, sat"
+    }, {
+        "Doctor": "Sanath Wanigasooriya",
+        "Hospital": "Avissawella Base Hospital",
+        "Gender": "Male",
+        "Clinic Day": "sun, mon, tue, wed, thu, fri, sat"
+    }],
 
 
 
