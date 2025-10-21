@@ -276,6 +276,17 @@ const doctorSpecialtyData = {
         "Gender": "Female",
         "Clinic Day": "mon, tue, wed, thu"
     }],
+    "RL": [{
+        "Doctor": "dhanushka karunarathne",
+        "Hospital": "Avissawella Base Hospital",
+        "Gender": "Male",
+        "Clinic Day": "mon, tue, wed, thu, fri"
+    }, {
+        "Doctor": "lilani p weerasekara",
+        "Hospital": "National Hospital - Colombo",
+        "Gender": "Female",
+        "Clinic Day": "sun"
+    }],
 
 
 
