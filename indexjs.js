@@ -270,6 +270,12 @@ const doctorSpecialtyData = {
         "Gender": "Male",
         "Clinic Day": "mon, tue, wed, thu, fri"
     }],
+    "PSY": [{
+        "Doctor": "pradeepika Hettiarachchi",
+        "Hospital": "Avissawella Base Hospital",
+        "Gender": "Female",
+        "Clinic Day": "mon, tue, wed, thu"
+    }],
 
 
 
