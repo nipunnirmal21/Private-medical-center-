@@ -287,6 +287,12 @@ const doctorSpecialtyData = {
         "Gender": "Female",
         "Clinic Day": "sun"
     }],
+    "ONCO": [{
+        "Doctor": "buddhini karunarathna",
+        "Hospital": "Avissawella Base Hospital",
+        "Gender": "Female",
+        "Clinic Day": "mon, tue, wed, thu, fri"
+    }],
 
 
 
