@@ -293,6 +293,12 @@ const doctorSpecialtyData = {
         "Gender": "Female",
         "Clinic Day": "mon, tue, wed, thu, fri"
     }],
+    "orthodontist": [{
+        "Doctor": "renuka priyadarshani",
+        "Hospital": "Avissawella Base Hospital",
+        "Gender": "Female",
+        "Clinic Day": "sat"
+    }],
 
 
 
