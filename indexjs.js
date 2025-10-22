@@ -299,6 +299,12 @@ const doctorSpecialtyData = {
         "Gender": "Female",
         "Clinic Day": "sat"
     }],
+    "orthopedic": [{
+        "Doctor": "parthipan",
+        "Hospital": "Avissawella Base Hospital",
+        "Gender": "Male",
+        "Clinic Day": "mon, tue, wed, thu, fri"
+    }],
 
 
 
