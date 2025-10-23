@@ -328,6 +328,12 @@ const doctorSpecialtyData = {
         "Gender": "Female",
         "Clinic Day": "sat"
     }],
+    "Urological": [{
+        "Doctor": "hilary Fernando",
+        "Hospital": "National Hospital - Ratnapura",
+        "Gender": "Male",
+        "Clinic Day": "wed, sat"
+    }],
 
 
 
