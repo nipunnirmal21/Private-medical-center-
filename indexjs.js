@@ -334,6 +334,17 @@ const doctorSpecialtyData = {
         "Gender": "Male",
         "Clinic Day": "wed, sat"
     }],
+    "Ned": [{
+        "Doctor": "jalitha thinna arachchi",
+        "Hospital": "National Hospital - Gampaha",
+        "Gender": "Male",
+        "Clinic Day": "sat"
+    },{
+        "Doctor": "sanjaya heiyanthuduwa",
+        "Hospital": "Army hospital colombo",
+        "Gender": "Male",
+        "Clinic Day": "Tue"
+    }],
 
 
 
