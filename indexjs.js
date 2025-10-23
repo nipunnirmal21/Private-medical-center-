@@ -322,6 +322,12 @@ const doctorSpecialtyData = {
         "Gender": "Male",
         "Clinic Day": "thu"
     }],
+    "PUL": [{
+        "Doctor": "ruwanthi jayasekara",
+        "Hospital": "National Hospital - Colombo",
+        "Gender": "Female",
+        "Clinic Day": "sat"
+    }],
 
 
 
