@@ -305,6 +305,12 @@ const doctorSpecialtyData = {
         "Gender": "Male",
         "Clinic Day": "mon, tue, wed, thu, fri"
     }],
+    "surgeon": [{
+            "Doctor": "harsha jayasundara",
+            "Hospital": "Avissawella Base Hospital",
+            "Gender": "Male",
+            "Clinic Day": "mon, tue, wed, thu, fri"
+        }],
 
 
 
