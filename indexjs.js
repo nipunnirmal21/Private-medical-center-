@@ -311,6 +311,17 @@ const doctorSpecialtyData = {
             "Gender": "Male",
             "Clinic Day": "mon, tue, wed, thu, fri"
         }],
+        "Ner surgon": [{
+        "Doctor": "sarath munasinghe",
+        "Hospital": "National Hospital - Colombo",
+        "Gender": "Male",
+        "Clinic Day": "thu"
+    }, {
+        "Doctor": "t thivakaran",
+        "Hospital": "National Hospital - Colombo",
+        "Gender": "Male",
+        "Clinic Day": "thu"
+    }],
 
 
 
