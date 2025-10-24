@@ -345,6 +345,18 @@ const doctorSpecialtyData = {
         "Gender": "Male",
         "Clinic Day": "Tue"
     }],
+    "ES": [{
+        "Doctor": "thisara gunathilaka",
+        "Hospital": "National Eye Hospital colmbo",
+        "Gender": "Male",
+        "Clinic Day": "tu, sun"
+    }, {
+        "Doctor": "Thusitha Gunasekara",
+        "Hospital": "Avissawella Base Hospital",
+        "Gender": "Male",
+        "Clinic Day": "wed, fri"
+    }]
+};
 
 
 
