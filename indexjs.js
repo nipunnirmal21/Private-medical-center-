@@ -357,6 +357,12 @@ const doctorSpecialtyData = {
         "Clinic Day": "wed, fri"
     }]
 };
+// Get modal elements
+const modal = document.getElementById('department-modal');
+const modalTitle = document.getElementById('modal-title');
+const modalDescription = document.getElementById('modal-description');
+const modalServices = document.getElementById('modal-services');
+const closeBtn = modal.querySelector('.close-btn');
 
 
 
