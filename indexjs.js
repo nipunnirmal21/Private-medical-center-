@@ -401,6 +401,13 @@ document.querySelectorAll('.department-card').forEach(card => {
         }
     });
 });
+// Event listener for closing the modal
+closeBtn.addEventListener('click', closeModal);
+modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        closeModal();
+    }
+});
 
 
 
