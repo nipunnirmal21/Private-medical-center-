@@ -393,6 +393,14 @@ document.querySelectorAll('.department-card').forEach(card => {
             openModal(departmentId);
         }
     });
+    card.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            const departmentId = card.dataset.department;
+            openModal(departmentId);
+        }
+    });
+});
 
 
 
