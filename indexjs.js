@@ -423,6 +423,13 @@ emailjs.init(YOUR_EMAILJS_PUBLIC_KEY);
 const form = document.getElementById('appointmentForm');
 const appointmentBtn = document.getElementById('appointmentBtn');
 
+const specialistSelect = document.getElementById('specialist');
+const doctorSelect = document.getElementById('doctor');
+const dateSelect = document.getElementById('date');
+const doctorDetailsDiv = document.getElementById('doctor-details');
+const detailsName = document.getElementById('details-name');
+const detailsHospital = document.getElementById('details-hospital');
+
 
 
         
