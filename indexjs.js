@@ -420,6 +420,9 @@ const YOUR_EMAILJS_PUBLIC_KEY = 'vbpKFUzbOiYqfAzdY';
 
 emailjs.init(YOUR_EMAILJS_PUBLIC_KEY);
 
+const form = document.getElementById('appointmentForm');
+const appointmentBtn = document.getElementById('appointmentBtn');
+
 
 
         
