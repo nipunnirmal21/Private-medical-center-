@@ -430,6 +430,17 @@ const doctorDetailsDiv = document.getElementById('doctor-details');
 const detailsName = document.getElementById('details-name');
 const detailsHospital = document.getElementById('details-hospital');
 
+const specialtyMap = {
+    "Cardiology": ["CCRD"],
+    "Neurology": ["Ner surgon", "Ned"],
+    "Pediatrics": ["VPP"],
+    "Ophthalmology": ["ES"],
+    "General Practitioner": ["VP"],
+    "General Surgeon": ["VS", "surgeon"],
+    "Dermatology": ["DL"],
+    "Orthopedic Surgeon": ["orthopedic"]
+};
+
 
 
         
