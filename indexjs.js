@@ -441,6 +441,10 @@ const specialtyMap = {
     "Orthopedic Surgeon": ["orthopedic"]
 };
 
+specialistSelect.addEventListener('change', () => {
+    const selectedSpecialty = specialistSelect.value;
+    const specialtyKeys = specialtyMap[selectedSpecialty] || [];
+
 
 
         
