@@ -445,6 +445,25 @@ specialistSelect.addEventListener('change', () => {
     const selectedSpecialty = specialistSelect.value;
     const specialtyKeys = specialtyMap[selectedSpecialty] || [];
 
+    doctorSelect.innerHTML = '<option value="" disabled selected>Select a doctor</option>';
+    dateSelect.innerHTML = '<option value="" disabled selected>Select Date</option>';
+    doctorDetailsDiv.classList.add('hidden'); // Hide details
+
+    let doctors = [];
+    specialtyKeys.forEach(key => {
+        if (doctorSpecialtyData[key]) {
+            doctors = doctors.concat(doctorSpecialtyData[key]);
+        }
+    });
+
+    doctors.forEach(doctor => {
+        const option = document.createElement('option');
+        option.value = doctor.Doctor;
+        option.textContent = doctor.Doctor;
+        doctorSelect.appendChild(option);
+    });
+});
+
 
 
         
