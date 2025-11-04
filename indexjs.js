@@ -463,6 +463,23 @@ specialistSelect.addEventListener('change', () => {
         doctorSelect.appendChild(option);
     });
 });
+doctorSelect.addEventListener('change', () => {
+    const selectedDoctorName = doctorSelect.value;
+    const selectedSpecialty = specialistSelect.value;
+    const specialtyKeys = specialtyMap[selectedSpecialty] || [];
+
+    let selectedDoctor = null;
+
+    // Find the full doctor object to get their details
+    for (const key of specialtyKeys) {
+        if (doctorSpecialtyData[key]) {
+            const foundDoctor = doctorSpecialtyData[key].find(doc => doc.Doctor === selectedDoctorName);
+            if (foundDoctor) {
+                selectedDoctor = foundDoctor;
+                break;
+            }
+        }
+    }
 
 
 
