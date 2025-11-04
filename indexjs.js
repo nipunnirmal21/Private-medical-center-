@@ -480,6 +480,19 @@ doctorSelect.addEventListener('change', () => {
             }
         }
     }
+    if (selectedDoctor) {
+        // 1. Populate and show the doctor details div
+        detailsName.textContent = `Doctor: ${selectedDoctor.Doctor}`;
+        detailsHospital.textContent = `Hospital: ${selectedDoctor.Hospital}`;
+        doctorDetailsDiv.classList.remove('hidden');
+
+        // 2. Populate the date dropdown based on clinic days
+        populateAvailableDates(selectedDoctor);
+    } else {
+        doctorDetailsDiv.classList.add('hidden');
+        dateSelect.innerHTML = '<option value="" disabled selected>Select Date</option>';
+    }
+});
 
 
 
