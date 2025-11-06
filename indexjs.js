@@ -493,6 +493,10 @@ doctorSelect.addEventListener('change', () => {
         dateSelect.innerHTML = '<option value="" disabled selected>Select Date</option>';
     }
 });
+function populateAvailableDates(doctor) {
+    dateSelect.innerHTML = '<option value="" disabled selected>Select Date</option>';
+    if (!doctor || !doctor['Clinic Day']) return;
+
 
 
 
