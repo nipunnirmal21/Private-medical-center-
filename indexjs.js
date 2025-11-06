@@ -496,6 +496,25 @@ doctorSelect.addEventListener('change', () => {
 function populateAvailableDates(doctor) {
     dateSelect.innerHTML = '<option value="" disabled selected>Select Date</option>';
     if (!doctor || !doctor['Clinic Day']) return;
+    const clinicDaysStr = doctor['Clinic Day'].toLowerCase();
+
+    if (clinicDaysStr.includes("first sunday")) {
+        let today = new Date();
+        for (let m = 0; m < 3; m++) {
+            let targetMonth = new Date(today.getFullYear(), today.getMonth() + m, 1);
+            for (let i = 1; i <= 7; i++) {
+                let d = new Date(targetMonth.getFullYear(), targetMonth.getMonth(), i);
+                if (d.getDay() === 0) {
+                    const option = document.createElement('option');
+                    option.value = d.toISOString().split('T')[0];
+                    option.textContent = d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+                    dateSelect.appendChild(option);
+                    break;
+                }
+            }
+        }
+        return;
+    }
 
 
 
