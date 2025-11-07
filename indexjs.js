@@ -525,6 +525,15 @@ function populateAvailableDates(doctor) {
         let currentDate = new Date();
         currentDate.setDate(today.getDate() + i);
 
+        if (availableDays.includes(currentDate.getDay())) {
+            const option = document.createElement('option');
+            option.value = currentDate.toISOString().split('T')[0];
+            option.textContent = currentDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' });
+            dateSelect.appendChild(option);
+        }
+    }
+}
+
 
 
 
