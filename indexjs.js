@@ -538,6 +538,9 @@ const showError = (id, message) => {
     errorElement.textContent = message;
     errorElement.classList.remove('hidden');
 };
+const hideError = (id) => {
+    document.getElementById(id).classList.add('hidden');
+};
 
 
 
