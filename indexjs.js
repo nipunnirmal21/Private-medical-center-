@@ -533,6 +533,11 @@ function populateAvailableDates(doctor) {
         }
     }
 }
+const showError = (id, message) => {
+    const errorElement = document.getElementById(id);
+    errorElement.textContent = message;
+    errorElement.classList.remove('hidden');
+};
 
 
 
