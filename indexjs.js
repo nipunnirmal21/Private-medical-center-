@@ -542,6 +542,15 @@ const hideError = (id) => {
     document.getElementById(id).classList.add('hidden');
 };
 
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const specialist = specialistSelect.value;
+    const doctor = doctorSelect.value;
+    const date = dateSelect.value;
+
 
 
 
