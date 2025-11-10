@@ -551,6 +551,8 @@ form.addEventListener('submit', function(event) {
     const doctor = doctorSelect.value;
     const date = dateSelect.value;
 
+let isValid = true;
+    ['name-error', 'phone-error', 'specialist-error', 'doctor-error', 'date-error'].forEach(hideError);
 
 
 
