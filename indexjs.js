@@ -554,6 +554,12 @@ form.addEventListener('submit', function(event) {
 let isValid = true;
     ['name-error', 'phone-error', 'specialist-error', 'doctor-error', 'date-error'].forEach(hideError);
 
+    if (name.trim() === '') { showError('name-error', 'Please enter your name.'); isValid = false; }
+    if (phone.trim() === '' || !/^\d{10,}$/.test(phone)) { showError('phone-error', 'Please enter a valid phone number.'); isValid = false; }
+    if (!specialist) { showError('specialist-error', 'Please select a specialist.'); isValid = false; }
+    if (!doctor) { showError('doctor-error', 'Please select a doctor.'); isValid = false; }
+    if (!date) { showError('date-error', 'Please select a date.'); isValid = false; }
+
 
 
         
