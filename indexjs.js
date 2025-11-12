@@ -560,6 +560,17 @@ let isValid = true;
     if (!doctor) { showError('doctor-error', 'Please select a doctor.'); isValid = false; }
     if (!date) { showError('date-error', 'Please select a date.'); isValid = false; }
 
+    if (!isValid) return;
+
+    appointmentBtn.disabled = true;
+    appointmentBtn.textContent = 'Sending...';
+
+    const templateParams = {
+        name, phone, specialist, doctor, date,
+        to_email_1: 'nipunnirmalsamarathunga11@gmail.com',
+        to_email_2: 'aimagica968@gmail.com'
+    };
+
 
 
         
