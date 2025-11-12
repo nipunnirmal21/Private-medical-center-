@@ -571,6 +571,14 @@ let isValid = true;
         to_email_2: 'aimagica968@gmail.com'
     };
     emailjs.send(YOUR_EMAILJS_SERVICE_ID, YOUR_EMAILJS_TEMPLATE_ID, templateParams)
+    .then(response => {
+            console.log('SUCCESS!', response.status, response.text);
+            document.getElementById('form-messages').innerHTML = '<p class="text-green-600 font-semibold">Appointment booked successfully!</p>';
+            form.reset();
+            doctorSelect.innerHTML = '<option value="" disabled selected>Select a doctor</option>';
+            dateSelect.innerHTML = '<option value="" disabled selected>Select Date</option>';
+            doctorDetailsDiv.classList.add('hidden');
+        }, error => {
 
 
 
