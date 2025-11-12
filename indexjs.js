@@ -570,6 +570,7 @@ let isValid = true;
         to_email_1: 'nipunnirmalsamarathunga11@gmail.com',
         to_email_2: 'aimagica968@gmail.com'
     };
+    emailjs.send(YOUR_EMAILJS_SERVICE_ID, YOUR_EMAILJS_TEMPLATE_ID, templateParams)
 
 
 
