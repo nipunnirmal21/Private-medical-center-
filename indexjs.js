@@ -579,6 +579,14 @@ let isValid = true;
             dateSelect.innerHTML = '<option value="" disabled selected>Select Date</option>';
             doctorDetailsDiv.classList.add('hidden');
         }, error => {
+               console.log('FAILED...', error);
+            document.getElementById('form-messages').innerHTML = '<p class="text-red-600 font-semibold">Failed to book appointment. Please try again.</p>';
+        })
+        .finally(() => {
+            appointmentBtn.disabled = false;
+            appointmentBtn.textContent = 'Book Appointment';
+        });
+});
 
 
 
