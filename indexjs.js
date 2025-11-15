@@ -587,6 +587,10 @@ let isValid = true;
             appointmentBtn.textContent = 'Book Appointment';
         });
 });
+const searchInput = document.getElementById('doctor-search');
+const autocompleteList = document.getElementById('autocomplete-list');
+const selectedDoctorDisplay = document.getElementById('selected-doctor-display');
+const doctorCards = document.querySelectorAll('.doctor-carousel-card');
 
 
 
