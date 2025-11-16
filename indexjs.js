@@ -592,6 +592,7 @@ const autocompleteList = document.getElementById('autocomplete-list');
 const selectedDoctorDisplay = document.getElementById('selected-doctor-display');
 const doctorCards = document.querySelectorAll('.doctor-carousel-card');
 
+const allDoctorNames = [...new Set(Object.values(doctorSpecialtyData).flat().map(doctor => doctor.Doctor))];
 
 
         
