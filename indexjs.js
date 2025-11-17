@@ -594,6 +594,17 @@ const doctorCards = document.querySelectorAll('.doctor-carousel-card');
 
 const allDoctorNames = [...new Set(Object.values(doctorSpecialtyData).flat().map(doctor => doctor.Doctor))];
 
+function filterDoctorCards(searchTerm) {
+    doctorCards.forEach(card => {
+        const doctorName = card.dataset.doctorName.toLowerCase();
+        if (doctorName.includes(searchTerm.toLowerCase())) {
+            card.style.display = 'flex';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
 
         
     
