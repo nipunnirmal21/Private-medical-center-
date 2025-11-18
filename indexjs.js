@@ -605,6 +605,11 @@ function filterDoctorCards(searchTerm) {
     });
 }
 
+function selectDoctor(name) {
+    searchInput.value = name;
+    autocompleteList.innerHTML = '';
+    autocompleteList.classList.add('hidden');
+
 
         
     
