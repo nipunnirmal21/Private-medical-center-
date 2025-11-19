@@ -610,6 +610,14 @@ function selectDoctor(name) {
     autocompleteList.innerHTML = '';
     autocompleteList.classList.add('hidden');
 
+     selectedDoctorDisplay.innerHTML = `
+        <p class="text-gray-600">Showing results for:</p>
+        <h4 class="text-2xl font-bold text-blue-800 mt-1">${name}</h4>
+    `;
+    
+    filterDoctorCards(name);
+}
+
 
         
     
