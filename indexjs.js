@@ -618,6 +618,9 @@ function selectDoctor(name) {
     filterDoctorCards(name);
 }
 
+searchInput.addEventListener('input', (e) => {
+    const searchTerm = e.target.value.toLowerCase().trim();
+
 
         
     
