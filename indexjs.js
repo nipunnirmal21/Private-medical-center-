@@ -620,7 +620,14 @@ function selectDoctor(name) {
 
 searchInput.addEventListener('input', (e) => {
     const searchTerm = e.target.value.toLowerCase().trim();
+filterDoctorCards(searchTerm);
 
+    if (searchTerm.length === 0) {
+        autocompleteList.innerHTML = '';
+        autocompleteList.classList.add('hidden');
+        selectedDoctorDisplay.innerHTML = ''; // Clear display when search is cleared
+        return;
+    }
 
         
     
