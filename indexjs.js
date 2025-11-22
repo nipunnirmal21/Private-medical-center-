@@ -629,6 +629,9 @@ filterDoctorCards(searchTerm);
         return;
     }
 
+    const matches = allDoctorNames.filter(name => name.toLowerCase().includes(searchTerm));
+    
+
         
     
         
