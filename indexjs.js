@@ -645,6 +645,12 @@ filterDoctorCards(searchTerm);
         autocompleteList.classList.add('hidden');
     }
 });
+// Hide autocomplete list if user clicks elsewhere
+document.addEventListener('click', function(e) {
+    if (!searchInput.contains(e.target)) {
+        autocompleteList.classList.add('hidden');
+    }
+});
 
         
     
