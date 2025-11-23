@@ -631,6 +631,20 @@ filterDoctorCards(searchTerm);
 
     const matches = allDoctorNames.filter(name => name.toLowerCase().includes(searchTerm));
     
+    autocompleteList.innerHTML = '';
+    if (matches.length > 0) {
+        matches.forEach(name => {
+            const item = document.createElement('div');
+            item.classList.add('p-3', 'hover:bg-gray-100', 'cursor-pointer');
+            item.textContent = name;
+            item.addEventListener('click', () => selectDoctor(name));
+            autocompleteList.appendChild(item);
+        });
+        autocompleteList.classList.remove('hidden');
+    } else {
+        autocompleteList.classList.add('hidden');
+    }
+});
 
         
     
