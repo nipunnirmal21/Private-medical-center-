@@ -654,4 +654,4 @@ document.addEventListener('click', function(e) {
 
         
 // CONTACT FORM JAVASCRIPT    
-        
+       const contactForm = document.getElementById('contactForm'); 
