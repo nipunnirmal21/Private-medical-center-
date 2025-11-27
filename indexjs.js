@@ -659,3 +659,6 @@ document.addEventListener('click', function(e) {
        contactForm.addEventListener('submit', function(event) {
     event.preventDefault();
 
+    const contactBtn = contactForm.querySelector('button[type="submit"]');
+    const messagesContainer = document.getElementById('contact-form-messages');
+
