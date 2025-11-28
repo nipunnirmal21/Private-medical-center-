@@ -662,3 +662,7 @@ document.addEventListener('click', function(e) {
     const contactBtn = contactForm.querySelector('button[type="submit"]');
     const messagesContainer = document.getElementById('contact-form-messages');
 
+    const name = contactForm.querySelector('input[name="name"]').value;
+    const email = contactForm.querySelector('input[name="email"]').value;
+    const subject = contactForm.querySelector('input[name="subject"]').value;
+    const message = contactForm.querySelector('textarea[name="message"]').value;
