@@ -671,3 +671,7 @@ document.addEventListener('click', function(e) {
         messagesContainer.innerHTML = '<p class="text-red-600 font-semibold">Please fill out all fields.</p>';
         return;
     }
+
+    messagesContainer.innerHTML = '';
+    contactBtn.disabled = true;
+    contactBtn.textContent = 'Sending...';
