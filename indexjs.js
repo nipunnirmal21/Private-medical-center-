@@ -675,3 +675,5 @@ document.addEventListener('click', function(e) {
     messagesContainer.innerHTML = '';
     contactBtn.disabled = true;
     contactBtn.textContent = 'Sending...';
+
+    const contactTemplateParams = { from_name: name, from_email: email, subject, message };
