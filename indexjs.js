@@ -666,3 +666,8 @@ document.addEventListener('click', function(e) {
     const email = contactForm.querySelector('input[name="email"]').value;
     const subject = contactForm.querySelector('input[name="subject"]').value;
     const message = contactForm.querySelector('textarea[name="message"]').value;
+
+    if (!name || !email || !subject || !message) {
+        messagesContainer.innerHTML = '<p class="text-red-600 font-semibold">Please fill out all fields.</p>';
+        return;
+    }
