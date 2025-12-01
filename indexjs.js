@@ -677,3 +677,7 @@ document.addEventListener('click', function(e) {
     contactBtn.textContent = 'Sending...';
 
     const contactTemplateParams = { from_name: name, from_email: email, subject, message };
+
+    // =======================================================================
+    // IMPORTANT ACTION REQUIRED!
+    // =======================================================================
