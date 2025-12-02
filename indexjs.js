@@ -681,3 +681,4 @@ document.addEventListener('click', function(e) {
     // =======================================================================
     // IMPORTANT ACTION REQUIRED!
     // =======================================================================
+    const YOUR_CONTACT_FORM_TEMPLATE_ID = 'PASTE_YOUR_CONTACT_TEMPLATE_ID_HERE';
