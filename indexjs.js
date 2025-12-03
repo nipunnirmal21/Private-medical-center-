@@ -682,3 +682,9 @@ document.addEventListener('click', function(e) {
     // IMPORTANT ACTION REQUIRED!
     // =======================================================================
     const YOUR_CONTACT_FORM_TEMPLATE_ID = 'PASTE_YOUR_CONTACT_TEMPLATE_ID_HERE';
+
+    emailjs.send(YOUR_EMAILJS_SERVICE_ID, YOUR_CONTACT_FORM_TEMPLATE_ID, contactTemplateParams)
+        .then(response => {
+            console.log('SUCCESS!', response.status, response.text);
+            messagesContainer.innerHTML = '<p class="text-green-600 font-semibold">Message sent successfully!</p>';
+            contactForm.reset();
