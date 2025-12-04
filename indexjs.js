@@ -688,3 +688,7 @@ document.addEventListener('click', function(e) {
             console.log('SUCCESS!', response.status, response.text);
             messagesContainer.innerHTML = '<p class="text-green-600 font-semibold">Message sent successfully!</p>';
             contactForm.reset();
+            }, error => {
+            console.log('FAILED...', error);
+            messagesContainer.innerHTML = '<p class="text-red-600 font-semibold">Failed to send message. Please check the Template ID in testjs.js.</p>';
+        })
