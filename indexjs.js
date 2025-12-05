@@ -692,3 +692,8 @@ document.addEventListener('click', function(e) {
             console.log('FAILED...', error);
             messagesContainer.innerHTML = '<p class="text-red-600 font-semibold">Failed to send message. Please check the Template ID in testjs.js.</p>';
         })
+        .finally(() => {
+            contactBtn.disabled = false;
+            contactBtn.textContent = 'Send Message';
+        });
+});
