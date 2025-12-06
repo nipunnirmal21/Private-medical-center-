@@ -678,9 +678,9 @@ document.addEventListener('click', function(e) {
 
     const contactTemplateParams = { from_name: name, from_email: email, subject, message };
 
-    // =======================================================================
+   
     // IMPORTANT ACTION REQUIRED!
-    // =======================================================================
+    
     const YOUR_CONTACT_FORM_TEMPLATE_ID = 'PASTE_YOUR_CONTACT_TEMPLATE_ID_HERE';
 
     emailjs.send(YOUR_EMAILJS_SERVICE_ID, YOUR_CONTACT_FORM_TEMPLATE_ID, contactTemplateParams)
