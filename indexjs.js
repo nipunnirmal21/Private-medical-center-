@@ -694,6 +694,6 @@ document.addEventListener('click', function(e) {
         })
         .finally(() => {
             contactBtn.disabled = false;
-            contactBtn.textContent = 'Send Message';
+            contactBtn.textContent = 'Send message';
         });
 });
